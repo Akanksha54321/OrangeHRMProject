@@ -28,7 +28,9 @@ public class ExtentManager {
 	public synchronized static ExtentReports getReporter() {
 		if (extent == null) {
 			
-			String reportPath = "D:\\eclipseworkspace\\OrangeHRMProject_Akanksha\\src\\test\\resources\\ExtentReport\\ExtentReport.html";
+		//	String reportPath = "D:\\eclipseworkspace\\OrangeHRMProject_Akanksha\\src\\test\\resources\\ExtentReport\\ExtentReport.html";
+			String reportPath = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\OrangeHRMBuild\\ExtentReport\\ExtentReport.html";
+			
 			System.out.println(reportPath);
 			ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
 			spark.config().setReportName("Automation Test Report");
